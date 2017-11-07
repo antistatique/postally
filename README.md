@@ -38,13 +38,13 @@ const markup = `
 // Custom and Foundation Email SASS variables
 const variables = `
   $primary-color: #0ECEE1 !default;
-`
+`;
 
 // Custom (S)CSS
 const styles = `
   body { background: $primary-color; }
   h1 { font-family: Georgia, serif;}
-`
+`;
 
 postally({
   from: 'from@example.org',
