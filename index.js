@@ -1,5 +1,3 @@
-const postally = () => {
-  console.log('Postally !');
-};
+const postally = require('./src/postally.js');
 
 module.exports = postally;
