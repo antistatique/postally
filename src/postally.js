@@ -8,6 +8,21 @@ const inlineCss = require('inline-css');
 const postallyHTML = require('./templates/html.js');
 const postallySASS = require('./templates/sass.js');
 
+/**
+ * Create and send custom HTML Email using Twig, Foundation for Emails and Sendgrid
+ * 
+ * @param {Object} {
+ *   from {string} email to send from
+ *   to {string} email to send to
+ *   subject {string} email subject
+ *   data {Object} data to pass to Twig template
+ *   markup {string} Email Inky/Twig markup
+ *   variables {string} Foundation for Emails and custom Sass variables
+ *   styles {string} Custom (S)CSS
+ *   sendgrid_api_key {string} Sendgrid API Key (can send mails)
+ * } 
+ * @returns {Promise} status code (201 is OK) 
+ */
 const postally = async ({
   from,
   to,
